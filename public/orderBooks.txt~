@@ -1,0 +1,13 @@
+edition_year
+asc
+
+### Ajuda ###
+Na primeira linha, insira umas das seguintes palavras abaixo para realizar a ordenação:
+id
+title
+edition_year
+author
+
+Na segunda linha, insira o modo de ordenação (ascendente ou descendente) conforme opções abaixo:
+asc
+desc

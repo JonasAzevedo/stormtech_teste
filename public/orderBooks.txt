@@ -1,0 +1,13 @@
+title
+asc
+
+### Ajuda ###
+Na primeira linha, insira o campo com o qual deseja realizar a ordenação. Segue possíveis campos:
+id
+title
+edition_year
+authors.name
+
+Na segunda linha, insira o modo de ordenação (ascendente ou descendente) conforme opções abaixo:
+asc
+desc

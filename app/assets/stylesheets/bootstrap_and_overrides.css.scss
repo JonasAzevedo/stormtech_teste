@@ -1,0 +1,41 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    padding-top: 50px;
+}
+
+table.tbl_books {
+    margin-top: 40px;
+}
+
+h1.title {
+    text-align: center; 
+    text-decoration: underline;    
+    margin-bottom: 50px;
+}
+
+a.lnkNewRecord {
+    color: brown;
+    font-size: 20px;
+}
+
+section.secForm {    
+    background-color: #f2f2f2;     
+    border-style: solid;
+    border-color: #bfbfbf;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+input.inpTitleBook {    
+    width: 500px;
+}
+
+p.modoOrder {
+    color: brown;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+/*@import "bootstrap-responsive";*/

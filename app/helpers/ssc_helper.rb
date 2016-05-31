@@ -1,0 +1,2 @@
+module SscHelper
+end

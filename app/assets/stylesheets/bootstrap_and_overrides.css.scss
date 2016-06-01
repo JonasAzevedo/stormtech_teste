@@ -38,4 +38,17 @@ p.modoOrder {
     font-size: 15px;
 }
 
+div.error_explanation {
+    background-color: azure;
+    margin: 30px;
+    padding: 10px;      
+    border-style: solid;
+    border-color: red;
+}
+
+h2.error_text {
+    color: red;
+    font-size: 20px;    
+}
+
 /*@import "bootstrap-responsive";*/

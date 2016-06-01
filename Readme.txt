@@ -1,0 +1,64 @@
+1 - Ferramentas Utilizadas
+Foi utilizada a linguagem de programação Ruby, com a versão 2.0.0p643, e o framework rails com a sua versão 4.2.4.
+O banco de dados utilizado foi o mySql.
+O sistema operacional utilizado foi o Ubuntu com a versão 15.04
+---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+
+2 - Instalando Ferramentas
+Caso  necessite de ajuda para instalar as ferramentas aqui utilizadas, segue passo a passo:
+
+2.1 - Para instalar o Ruby e o Rails, pode seguir o tutorial do link abaixo, seguindo a partir do texto "Installing Specific Ruby and Rails Versions".
+https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm
+
+2.2 - Para instalar o mySql, pode seguir o tutorial do link abaixo, seguindo a partir do texto "Install MySQL"
+https://www.digitalocean.com/community/tutorials/how-to-use-mysql-with-your-ruby-on-rails-application-on-ubuntu-14-04
+---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+
+3 - Configurar Ambiente
+
+3.1 - O projeto está hospedado no GitHub, para cloná-lo execute o seguinte comando:
+git clone https://github.com/JonasAzevedo/stormtech_teste.git
+
+3.2 - Após abaixá-lo, atualize as gem's do projeto. No terminal do Ubuntu (CTRL + ALT + T), acesse a pasta em que o projeto foi clonado, e rode o seguinte comando:
+bundle install
+
+3.3 - Você deve criar o banco de dados no seu computador, para isso, também via o terminal do ubuntu, acesse a pasta em que o projeto foi clonado, e rode o seguinte comando:
+rake db:create
+
+3.4 - Você também deve rodar as migrações do banco de dados, também via o terminal do ubuntu, acesse a pasta em que o projeto foi clonado, e rode o seguinte comando:
+rake db:migrate
+
+3.5 - Se tudo ocorreu certo, você pode iniciar o servidor rails. No terminal do Ubuntu, acesse a pasta em que o projeto foi clonado, e rode o seguinte comando:
+rails s
+
+3.6 - Agora você pode acessar a aplicação via navegador web, acessando o seguinte endereço: http://localhost:3000/
+---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+
+4 - Configurar métodos de ordenação
+Dentro do diretório do projeto, acesse a pasta "public". Esta pasta terá o arquivo "orderBooks.json", o qual é o responsável por configurar o modo de ordenação utilizado.
+A referida configuração, é realizada em formato json, como segue o exemplo abaixo:
+
+{"Orders" : [
+    { "field" : "id", "mode" : "asc"},
+    { "field" : "title", "mode" : "desc"}
+]}
+
+As opções válidas para o campo "field" são:
+id
+title
+edition_year
+authors.name
+
+As opções válidas para o campo "mode" são:
+asc
+desc
+
+---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
+
+
+5 - UML
+O diagrama de classes encontra-se na pasta "public" com o nome "Diagrama de Classes.png".
+---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*---*
